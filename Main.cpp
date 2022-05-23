@@ -18,11 +18,13 @@ int main()
 	}
 	glfwMakeContextCurrent(window);
 
+	gladLoadGL();
 
 
 
 
-
+	glViewport(0, 0, 800, 800);
+	
 	while (!glfwWindowShouldClose(window))
 	{
 		glfwPollEvents();
