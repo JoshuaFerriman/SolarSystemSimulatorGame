@@ -16,25 +16,79 @@
     <Filter Include="Resource Files\Shaders">
       <UniqueIdentifier>{9b42b8c6-26f4-4a72-968a-ea6ad2eba707}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Resource Files\Textures">
+      <UniqueIdentifier>{3501f559-9260-48b3-aeec-96a26f72feb0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\OpenGL">
+      <UniqueIdentifier>{68031827-e60b-4804-a623-fc970058227f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\OpenGl">
+      <UniqueIdentifier>{ac2e8aeb-81f9-4d9b-b8f1-7d5867cebb42}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\GameObjects">
+      <UniqueIdentifier>{43cfd002-2950-4c19-a1e8-2b987c17dafa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\GameObjects">
+      <UniqueIdentifier>{3193f34d-ea11-44db-b4be-c18fb28918f4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resource Files\Models">
+      <UniqueIdentifier>{8b1d2c90-90f6-418a-a55c-128396d4a158}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\Helper Files">
+      <UniqueIdentifier>{9b0a3447-8866-4280-91ce-90b94d6c7d72}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Helper Files">
+      <UniqueIdentifier>{716515d2-5aa7-4b8d-8204-39657af81b58}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="VBO.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="EBO.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
     <ClCompile Include="glad.c">
-      <Filter>Source Files</Filter>
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="shaderClass.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="stb.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="VAO.cpp">
+      <Filter>Source Files\OpenGL</Filter>
     </ClCompile>
     <ClCompile Include="Main.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
-    <ClCompile Include="shaderClass.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SphereGenerator.cpp">
+      <Filter>Source Files\GameObjects</Filter>
     </ClCompile>
-    <ClCompile Include="VBO.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="CelestialBody.cpp">
+      <Filter>Source Files\GameObjects</Filter>
     </ClCompile>
-    <ClCompile Include="EBO.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="SolarSystem.cpp">
+      <Filter>Source Files\GameObjects</Filter>
     </ClCompile>
-    <ClCompile Include="VAO.cpp">
-      <Filter>Source Files</Filter>
+    <ClCompile Include="Mesh.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Model.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Object.cpp">
+      <Filter>Source Files\OpenGL</Filter>
+    </ClCompile>
+    <ClCompile Include="Vector3D.cpp">
+      <Filter>Source Files\Helper Files</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -44,19 +98,107 @@
     <None Include="default.frag">
       <Filter>Resource Files\Shaders</Filter>
     </None>
+    <None Include="light.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="Models\scroll\scene.bin">
+      <Filter>Resource Files\Models</Filter>
+    </None>
+    <None Include="Models\sword\scene.bin">
+      <Filter>Resource Files\Models</Filter>
+    </None>
+    <None Include="Models\bunny\scene.bin">
+      <Filter>Resource Files\Models</Filter>
+    </None>
+    <None Include="Models\grindstone\scene.bin">
+      <Filter>Resource Files\Models</Filter>
+    </None>
+    <None Include="Models\map\scene.bin">
+      <Filter>Resource Files\Models</Filter>
+    </None>
+    <None Include="planet.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="planet.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="outlining.frag">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
+    <None Include="outlining.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="shaderClass.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="Camera.h">
+      <Filter>Header Files\OpenGl</Filter>
     </ClInclude>
     <ClInclude Include="EBO.h">
-      <Filter>Header Files</Filter>
+      <Filter>Header Files\OpenGl</Filter>
     </ClInclude>
-    <ClInclude Include="VBO.h">
-      <Filter>Header Files</Filter>
+    <ClInclude Include="shaderClass.h">
+      <Filter>Header Files\OpenGl</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Header Files\OpenGl</Filter>
     </ClInclude>
     <ClInclude Include="VAO.h">
+      <Filter>Header Files\OpenGl</Filter>
+    </ClInclude>
+    <ClInclude Include="VBO.h">
+      <Filter>Header Files\OpenGl</Filter>
+    </ClInclude>
+    <ClInclude Include="Engine.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="CelestialBody.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="SolarSystem.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="Mesh.h">
+      <Filter>Header Files\OpenGl</Filter>
+    </ClInclude>
+    <ClInclude Include="Model.h">
+      <Filter>Header Files\OpenGl</Filter>
+    </ClInclude>
+    <ClInclude Include="Object.h">
+      <Filter>Header Files\OpenGl</Filter>
+    </ClInclude>
+    <ClInclude Include="MathConstants.h">
+      <Filter>Header Files\Helper Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Vector3D.h">
+      <Filter>Header Files\Helper Files</Filter>
+    </ClInclude>
+    <ClInclude Include="SphereGenerator.h">
+      <Filter>Header Files\Helper Files</Filter>
+    </ClInclude>
+    <ClInclude Include="Spacecraft.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="AsteroidBelt.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameMap.h">
+      <Filter>Header Files\GameObjects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Textures\brick.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\planks.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+    <Image Include="Textures\planksSpec.png">
+      <Filter>Resource Files\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="light.vert">
+      <Filter>Resource Files\Shaders</Filter>
+    </Text>
   </ItemGroup>
 </Project>
